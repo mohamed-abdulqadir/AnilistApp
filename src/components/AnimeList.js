@@ -323,7 +323,7 @@ const AnimeList = ({ info, userId }) => {
                                     anime.media?.title?.romaji}
                                   <span> </span>
                                   <a
-                                    href={`https://animixplay.to/?q=${
+                                    href={`https://9anime.gs/filter?keyword=${
                                       anime.media?.title?.romaji ||
                                       anime.media?.title?.english ||
                                       anime.media?.title?.native
@@ -333,7 +333,7 @@ const AnimeList = ({ info, userId }) => {
                                   >
                                     <div className={styles.animix}>
                                       <img
-                                        src="https://animixplay.to/icon.png"
+                                        src="https://d4.alternativeto.net/qOUfLCyFQ-70alqi28JbEZrmi9oNnWmaqmmND0fj9m8/rs:fill:280:280:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy85YW5pbWVfMTA3NTM5LnBuZw.png"
                                         alt=""
                                       />
                                     </div>
