@@ -8,7 +8,7 @@ import Spring from "./components/Spring";
 import Winter from "./components/Winter";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TrendingAnime from "./components/TrendingAnime";
-import TrendingManga from "./components/TrendingManga";
+import TrendManga from "./components/TrendManga";
 import HomePage from "./components/HomePage";
 import Profile from "./components/Profile";
 import { SearchContext } from "./search";
@@ -363,11 +363,7 @@ function App() {
               element={<TrendingAnime />}
             ></Route>
             <Route path="/search" exact element={<Search />}></Route>
-            <Route
-              path="/trendingmanga"
-              exact
-              element={<TrendingManga />}
-            ></Route>
+            <Route path="/trendingmanga" exact element={<TrendManga />}></Route>
             {token ? (
               <Route
                 path="/notifications"

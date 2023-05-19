@@ -44,7 +44,7 @@ const TrendingAnime = () => {
     var variables = {
       page: 1,
       perPage: 50,
-      type: "ANIME",
+      type: "MANGA",
     };
 
     var url = "https://graphql.anilist.co",
@@ -88,7 +88,7 @@ const TrendingAnime = () => {
 
   return (
     <div className={styles.home}>
-      <h1 className={styles.trendingTitle}>Trending Anime</h1>
+      <h1 className={styles.trendingTitle}>Trending Manga</h1>
       <div className={styles.trending}>
         {trending.map((anime, idx) => {
           return (
@@ -119,35 +119,20 @@ const TrendingAnime = () => {
                           {anime.title.english || anime.title.romaji}
                           <span> </span>
                           <a
-                            href={`https://9anime.gs/filter?keyword=${anime.title.romaji}&sengine=all`}
+                            href={`https://mangadex.org/titles?q=${
+                              anime.title?.english || anime.title?.romaji
+                            }`}
                             target="_blank"
                             rel="noreferrer"
                           >
                             <img
-                              src="https://d4.alternativeto.net/qOUfLCyFQ-70alqi28JbEZrmi9oNnWmaqmmND0fj9m8/rs:fill:280:280:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy85YW5pbWVfMTA3NTM5LnBuZw.png"
+                              src="https://asset.brandfetch.io/id7o_ziJpI/id4LUn6E28.jpeg?updated=1681786551730"
                               alt=""
                               className="animix"
                             />
                           </a>
                         </strong>
                       </a>
-                    </div>
-                    <div className="studio">
-                      <strong>
-                        <a
-                          href={anime.studios.nodes[0]?.siteUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          {anime.studios.nodes[0]?.isAnimationStudio ? (
-                            <p style={{ color: "#75e1f0" }}>
-                              {anime.studios.nodes[0]?.name}
-                            </p>
-                          ) : (
-                            <p style={{ color: "gray" }}>TBA</p>
-                          )}
-                        </a>
-                      </strong>
                     </div>
                   </div>
                 </div>

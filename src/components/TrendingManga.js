@@ -91,10 +91,10 @@ const TrendingManga = () => {
 
       <div className={styles.tite}>
         <div className={styles.main_title}>
-          <Link to="/trendinganime"> TRENDING ANIME</Link>
+          <Link to="/trendingmanga"> TRENDING MANGA</Link>
         </div>
         <div className={styles.viewAll}>
-          <Link to="/trendinganime">View All</Link>
+          <Link to="/trendingmanga">View All</Link>
         </div>
       </div>
       <section className={styles.anime}>
