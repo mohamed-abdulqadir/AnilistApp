@@ -1,0 +1,101 @@
+.homepage {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  place-items: center;
+  margin-top: 3.5rem;
+  place-self: center;
+  width: 100%;
+}
+.items {
+  margin-right: 100%;
+  font-size: 13px;
+  width: 150px;
+  padding: 10px;
+  color: #edf1f5;
+}
+
+.maintitle {
+  margin-left: 5.5rem;
+}
+
+.animelisttitle {
+  margin: 3rem 10rem;
+}
+
+.progress {
+  padding: 15px !important;
+}
+
+.animeimage img {
+  padding-bottom: 10px;
+  width: 150px !important;
+  height: 230px;
+}
+
+.animeimage {
+  width: 150px;
+  display: flex;
+  position: relative;
+}
+
+.overview {
+  position: absolute;
+  bottom: 10px;
+  /* margin-bottom: 0.28rem; */
+  width: 150px;
+  min-height: 83.09px;
+  background: rgb(
+    29,
+    31,
+    36
+  ); /* Fallback for older browsers without RGBA-support */
+  background: rgba(45, 47, 51, 0.9);
+
+  text-align: left;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.home {
+  margin-bottom: 10rem;
+}
+
+.animix {
+  display: inline;
+}
+
+.animix img {
+  height: 25px !important;
+  width: 20px !important;
+}
+.title a {
+  font-size: 14px;
+  color: #ffffff !important;
+}
+.title {
+  padding: 12px 0 0 5px;
+}
+
+.episodeProgress {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .homepage {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .homepage {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    place-items: center;
+    margin: 0 auto;
+  }
+}

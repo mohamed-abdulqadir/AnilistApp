@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap");
+
+body {
+  background-color: #15191e;
+  font-family: Overpass, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+nav {
+  background-color: #15191e;
+  width: 100vw;
+  padding: 5px;
+  transition: all 1s;
+  /* border-bottom: 2px solid #788592; */
+}
+
+.dropbtn {
+  background-color: #15191e;
+  color: white;
+  border: none;
+  /* cursor: pointer; */
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  border: none !important;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownBrowse {
+  border: none !important;
+  position: relative;
+  /* display: inline-block; */
+  margin-top: 5px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdowncontent {
+  margin-left: -4rem;
+  margin-top: 1rem;
+  background-color: #15191e;
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  font-size: 13px;
+  text-align: left;
+  padding: 15px 17px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.browseContent {
+  margin-left: -3rem;
+  margin-top: 7px;
+  background-color: #15191e;
+  display: none;
+  position: absolute;
+  margin-bottom: 0;
+  font-size: 10px;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0;
+  width: max-content;
+}
+
+/* Links inside the dropdown */
+.dropdowncontent a {
+  /* color: #ffffff !important; */
+  padding: 4px 5px;
+  z-index: 1000 !important;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdowncontent a:hover {
+  background-color: #3d84f2;
+}
+
+.browseContent a {
+  /* width: 105px; */
+  padding: 3px 5px;
+  z-index: 1000 !important;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.browseContent a:hover {
+  background-color: #3d84f2;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+.rightNav:hover .dropdowncontent {
+  display: block;
+}
+
+.dropdown:hover .browseContent {
+  display: block;
+}
+
+.dropdownBrowse:hover .browseContent {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links,
+.user {
+  display: flex;
+  margin-top: 2.5rem;
+  /* margin-top: 1.5rem; */
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chevronDown {
+  margin-top: 1.3rem;
+}
+
+.link span {
+  font-size: 11px;
+  text-align: center;
+}
+
+.user span {
+  margin-right: -100px;
+}
+
+i {
+  margin: 0 12px;
+  margin-bottom: 3px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  color: #a0b1c5 !important;
+  font-size: 14px;
+  margin-right: 35px;
+  letter-spacing: 0.07rem;
+}
+
+.links a:hover {
+  color: #d3d5f3 !important;
+}
+
+.logo img {
+  width: 150px;
+  height: 45px;
+  margin-top: 2rem;
+  margin-left: -6rem;
+}
+
+.avatar span {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.avatar i {
+  color: #777a9e;
+}
+
+.avatar i:hover {
+  color: #a0b1c5;
+}
+
+.avatar img {
+  width: 37.99px;
+  height: 37.99px;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+}
+
+.search {
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.search input {
+  background-color: #0b1622;
+  padding: 0 15px;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  height: 40px;
+  width: 215px;
+  line-height: 40px;
+  z-index: 1;
+  display: none;
+}
+
+.searchdisplay {
+  display: block;
+}
+
+.searchIcon:hover {
+  cursor: pointer;
+}
+.searchIcon {
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.icons {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* CSS */
+.button a {
+  color: #ffffff !important;
+}
+.button {
+  appearance: button;
+  background-color: transparent;
+  background-image: linear-gradient(to top, rgb(123, 125, 150), #6079a2);
+  border: 0 solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 2.5rem;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1),
+    0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+
+.button:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+    0px 1px 1px rgba(81, 41, 10, 0.15);
+  transform: translateY(0.125rem);
+}
+
+.button:focus {
+  box-shadow: rgba(72, 35, 7, 0.46) 0 0 0 4px,
+    -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+
+.rightNav {
+  display: flex;
+  font-size: 10px;
+}
+.dropdown {
+  border: 1px solid #6079a2;
+}
+
+.item span {
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 5px;
+}
+
+.rightNav i {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.sort_title:hover {
+  width: 100%;
+  background-color: #3d84f2;
+  color: #fff;
+}
+
+.popularity:hover {
+  width: 100%;
+  color: #fff;
+
+  background-color: #3d84f2;
+}
+.score:hover {
+  width: 100%;
+  color: #fff;
+
+  background-color: #3d84f2;
+}
+.status:hover {
+  width: 100%;
+  color: #fff;
+
+  background-color: #3d84f2;
+}
+.next:hover {
+  color: #fff;
+  width: 100%;
+
+  background-color: #3d84f2;
+}
+.start:hover {
+  color: #fff;
+  width: 100%;
+  background-color: #3d84f2;
+}
+
+.hide {
+  display: none;
+}
+
+.end:hover {
+  color: #fff;
+  width: 100%;
+  background-color: #3d84f2;
+}
+
+.sort_title {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.popularity {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.score {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.status {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.next {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.start {
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.end {
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.select-display {
+  display: block !important;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 822px) {
+  .links a {
+    margin-right: 15px;
+  }
+}
+
+.searchClick {
+  border: 0;
+  outline: none;
+  color: #fff;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 5px 25px;
+  transition: all 0.5s;
+  background: transparent;
+}
+
+.searchClick:hover {
+  cursor: pointer;
+}
+
+.searchClick:focus {
+  width: 150px;
+}
+
+.searchClick {
+  position: relative;
+  overflow: hidden;
+}
+
+.searchClick input {
+  background: transparent;
+  outline: none;
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  left: 0%;
+  padding: 10px;
+}
+
+.notis {
+  background-color: #ff7272;
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  height: 31px;
+  width: 30px;
+  text-align: center;
+}
+
+.notis a {
+  color: #fff !important;
+}
+
+.notis:hover {
+  cursor: pointer;
+}

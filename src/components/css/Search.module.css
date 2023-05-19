@@ -1,0 +1,99 @@
+.maintitle {
+  color: #fff;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.title {
+  display: flex;
+  letter-spacing: 0.7px;
+  text-align: center;
+  font-size: 17px;
+  color: #fff !important;
+  width: 500px !important;
+  /* overflow-x: scroll; */
+  word-wrap: break-word;
+}
+
+.description {
+  margin: 10px 0;
+}
+
+.poster {
+  width: 170px;
+  height: fit-content;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+.overview {
+  color: rgb(203, 212, 216);
+  font-size: 1.5rem;
+  padding: 20px;
+  padding-top: 0;
+  width: max-content;
+}
+
+.studio {
+  width: fit-content;
+}
+
+.animix {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.synopsis {
+  width: 500px;
+  overflow-y: scroll;
+  height: 200px;
+}
+
+.synopsis::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.synopsis::-webkit-scrollbar-thumb {
+  background: rgb(125, 125, 146);
+  border-radius: 10px;
+}
+
+.synopsis::-webkit-scrollbar-thumb:hover {
+  background: rgb(79, 84, 90);
+}
+
+.synopsis::-webkit-scrollbar {
+  width: 5px;
+}
+
+@media screen and (max-width: 515px) {
+  .synopsis {
+    font-size: 14px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+  }
+}

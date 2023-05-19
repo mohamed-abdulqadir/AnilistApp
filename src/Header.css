@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #1b1b21;
+  height: 30vh;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2.3rem;
+  letter-spacing: 0.07rem;
+}
+
+.dropbtn {
+  background-color: #595b76;
+  color: #bcbedc;
+  padding: 10px;
+  padding-left: 7px;
+  font-size: 16px;
+  border: none;
+  font-weight: 600;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  color: #2b2d42;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black !important;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #bcbedc;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #575867;
+}
+
+.filters {
+  position: absolute;
+  display: flex;
+  right: 70px;
+  top: 65%;
+  margin-bottom: -4%;
+}
+
+.filter-icon:hover {
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  bottom: -40%;
+  right: 80%;
+  z-index: 1;
+  display: none;
+  padding: 0 15px;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  height: 40px;
+  width: 215px;
+  line-height: 40px;
+}
+
+.input::-moz-placeholder {
+  color: #bcbedc;
+  opacity: 0.8;
+}
+
+.input:-ms-input-placeholder {
+  color: #bcbedc;
+  opacity: 0.8;
+}
+
+.input::placeholder {
+  color: #bcbedc;
+  opacity: 0.8;
+}
+
+.input-display {
+  display: block;
+  background-color: #1f232d;
+}
+
+.search-icon:hover {
+  cursor: pointer;
+}
+
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 200%;
+  background-color: #595b76;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0 5px;
+  transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sort {
+  display: none;
+  position: absolute;
+  right: -170%;
+  bottom: -980%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 150px;
+  height: 920%;
+  z-index: 1000 !important;
+  background-color: #1f232d;
+  color: #77789e;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.sort_title:hover {
+  width: 100%;
+  background-color: #3d84f2;
+  color: #fff;
+}
+
+.popularity:hover {
+  width: 100%;
+  color: #fff;
+  background-color: #3d84f2;
+}
+
+.score:hover {
+  width: 100%;
+  color: #fff;
+  background-color: #3d84f2;
+}
+
+.status:hover {
+  width: 100%;
+  color: #fff;
+  background-color: #3d84f2;
+}
+
+.next:hover {
+  color: #fff;
+  width: 100%;
+  background-color: #3d84f2;
+}
+
+.start:hover {
+  color: #fff;
+  width: 100%;
+  background-color: #3d84f2;
+}
+
+.hide {
+  display: none;
+}
+
+.end:hover {
+  color: #fff;
+  width: 100%;
+  background-color: #3d84f2;
+}
+
+.sort_title {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.popularity {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.score {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.status {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.next {
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.start {
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.end {
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.select-display {
+  display: block !important;
+}
+
+.blue {
+  color: #75e1f0;
+}
+
+.blue:hover {
+  background-color: transparent;
+  color: #75e1f0;
+}
+
+.select-none {
+  display: none;
+}
+
+.dropdown_item {
+  padding: 5px;
+}
+
+ul {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+li {
+  margin-right: 0.75rem;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #bcbedc;
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-right: 35px;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #cecfe2;
+}
+
+.active li {
+  color: #fff;
+}
+
+.active span {
+  color: #bcbedc;
+  transition: all 0.8s;
+}
+
+.wrap span {
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.sort_active {
+  color: #75e1f0;
+}
+
+.logo {
+  width: 150px;
+  height: 46px;
+  margin-right: 16rem;
+  /* display: flex; */
+  /* justify-content: flex-start; */
+}
+
+.TV {
+  margin-top: 4rem;
+  margin-left: 2rem;
+  font-size: 23px;
+  font-weight: 900;
+  color: white;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+.searching {
+  display: flex;
+  margin: 0 auto;
+  position: absolute;
+  top: 6rem;
+  left: 45%;
+}
+
+.search {
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+i {
+  margin-left: 15px;
+  color: #bcbedc;
+}
+
+i:hover {
+  color: #fff;
+}
+
+.trending-links {
+  border: 1px solid #bcbedc;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  /* margin-right: 11.1rem; */
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.trending-links:hover {
+  background-color: #bcbedc;
+  color: #000;
+  font-weight: 600;
+}
+
+.trendul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10.7rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+  .dropbtn {
+    margin-left: -10rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+} /*# sourceMappingURL=Header.css.map *//*# sourceMappingURL=Header.css.map */

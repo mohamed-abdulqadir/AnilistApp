@@ -1,0 +1,260 @@
+.banne v {
+  border: none;
+  outline: none;
+}
+
+.banner img {
+  top: 10rem;
+  position: absolute;
+  width: 100vw;
+  height: 300px;
+  z-index: -1;
+  box-shadow: 0px 18px 26px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+.logo img {
+  /* display: flex; */
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0px 18px 26px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 5rem;
+}
+.logo {
+  margin-right: 5rem;
+}
+.user {
+  /* width: fit-content; */
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(68, 57, 72, 0.5);
+  color: #ffffff;
+  /* width: 100%; */
+  height: 300px;
+}
+
+.infos {
+  display: flex;
+  padding: 5px;
+  box-shadow: 0px 18px 56px 10px rgba(0, 0, 0, 0.7);
+}
+
+.infos h5 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-left: 5px;
+}
+
+.user h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 25px;
+  /* box-shadow: 0px 18px 26px 10px rgba(0, 0, 0, 0.2); */
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.bio {
+  width: 100vw;
+  text-align: center;
+  padding: 2rem;
+  font-weight: 900;
+  background-color: #212b39;
+  box-shadow: 0px 18px 56px 10px rgba(0, 0, 0, 0.5);
+}
+
+.bioTitle {
+  font-size: 2rem;
+}
+
+.bio span {
+  font-size: 2rem;
+  display: inline-flex;
+  padding: 0;
+}
+
+.bio img {
+  width: 100px;
+  height: 100px;
+  margin-left: 2rem;
+}
+
+.mainProfile {
+  position: relative;
+  place-self: center;
+  margin: 0 auto;
+  width: 100vw;
+  margin-bottom: 10rem;
+}
+
+.title {
+  z-index: 0;
+  color: #ffffff;
+  width: 100%;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 50%; */
+  -ms-flex-order: 1;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 50%; */
+  width: 65%;
+}
+
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+.posters {
+  max-width: 150px;
+  max-height: 250px;
+  /* margin-right: 1rem; */
+  transition: all 0.5s;
+  object-fit: contain;
+  margin-right: 10px;
+  /* transition: transform 450ms; */
+}
+
+.posters:hover {
+  /* transform: scale(1.109); */
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats {
+  display: inline-block;
+  margin-right: 5rem;
+  font-size: 2rem;
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-flex-order: 2;
+  -webkit-order: 2;
+  order: 2;
+}
+
+.favourites {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+}
+
+.tots {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalAnime {
+  width: 100%;
+  border: 1px solid rgb(23, 18, 18);
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.totalWatched {
+  border: 1px solid rgb(23, 18, 18);
+  color: #fff;
+}
+
+.totalAnime:hover {
+  cursor: pointer;
+}
+.tit {
+  color: #121417;
+  font-weight: 900;
+  background-color: silver;
+  padding: 10px;
+}
+
+.total {
+  background-color: #121417;
+  padding: 10px;
+}
+
+.hovertext {
+  position: relative;
+  border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: fit-content;
+  background-color: #272729;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0 5px;
+  transition: opacity 0.4s ease-in-out;
+  position: absolute;
+  z-index: 1000 !important;
+  top: -11rem;
+  right: 25%;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.hovertext:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 800px) {
+  .banner img {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .user {
+    display: block;
+    text-align: center;
+  }
+  .infos {
+    box-shadow: 0px 18px 66px 20px rgba(0, 0, 0, 0.7);
+  }
+  .infos h5 {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .top {
+    flex-wrap: wrap;
+  }
+  .stats {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+    margin: 0 auto;
+  }
+  .favourites {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+}
