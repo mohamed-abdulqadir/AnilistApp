@@ -15,7 +15,7 @@ const Home = () => {
             </a>
           </div>
           <div className={styles.links}>
-            <a href="/spring">
+            <a href="/summer">
               SEASONAL ANIME <span> {"   "}</span>
               <img
                 src={process.env.PUBLIC_URL + "/seasonal.png"}
