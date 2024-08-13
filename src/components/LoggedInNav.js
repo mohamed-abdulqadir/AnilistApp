@@ -25,7 +25,7 @@ const LoggedInNav = ({ info }) => {
                 <span>Home</span>
               </div>
             </Link>
-            <a href={`/spring`}>
+            <a href={`/summer`}>
               <div className={styles.link}>
                 <img
                   src={process.env.PUBLIC_URL + "/seasonal.png"}
