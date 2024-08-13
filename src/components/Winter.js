@@ -93,7 +93,7 @@ const Winter = () => {
 
     var variables = {
       season: "WINTER",
-      seasonYear: 2024,
+      seasonYear: 2025,
       page: 1,
       sort: search.sortBy || "POPULARITY_DESC",
     };
@@ -194,12 +194,12 @@ const Winter = () => {
                         {anime.title.romaji || anime.title.english}
                         <span> </span>
                         <a
-                          href={`https://9anime.gs/filter?keyword=${anime.title.romaji}&sengine=all`}
+                          href={`https://anix.to/filter?keyword=${anime.title.romaji}&sengine=all`}
                           target="_blank"
                           rel="noreferrer"
                         >
                           <img
-                            src="https://d4.alternativeto.net/qOUfLCyFQ-70alqi28JbEZrmi9oNnWmaqmmND0fj9m8/rs:fill:280:280:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy85YW5pbWVfMTA3NTM5LnBuZw.png"
+                            src="https://divyanet.com/wp-content/uploads/2022/06/animixplay.png"
                             alt=""
                             className="animix"
                           />
