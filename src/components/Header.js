@@ -84,7 +84,7 @@ const Header = () => {
             onClick={handleClick}
           >
             <li>
-              Winter <span>2023</span>
+              Winter <span>2025</span>
             </li>
           </Link>
           <Link
@@ -95,7 +95,7 @@ const Header = () => {
             onClick={handleClick}
           >
             <li>
-              Spring <span>2023</span>
+              Spring <span>2024</span>
             </li>
           </Link>
           <Link
@@ -106,7 +106,7 @@ const Header = () => {
             onClick={handleClick}
           >
             <li>
-              Summer <span>2023</span>
+              Summer <span>2024</span>
             </li>
           </Link>
           <Link
@@ -117,7 +117,7 @@ const Header = () => {
             onClick={handleClick}
           >
             <li>
-              Fall <span>2023</span>
+              Fall <span>2024</span>
             </li>
           </Link>
         </ul>
