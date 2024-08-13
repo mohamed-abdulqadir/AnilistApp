@@ -94,7 +94,7 @@ const Spring = () => {
 
     var variables = {
       season: "SPRING",
-      seasonYear: 2025,
+      seasonYear: 2024,
       page: 1,
       sort: search.sortBy || "POPULARITY_DESC",
     };
