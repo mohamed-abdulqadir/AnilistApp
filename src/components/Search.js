@@ -151,12 +151,12 @@ const Search = ({ anime }) => {
                     {anime.type === "ANIME" ? (
                       <div>
                         <a
-                          href={`https://9anime.gs/filter?keyword=${anime.title.romaji}&sengine=all`}
+                          href={`https://anix.to/filter?keyword=${anime.title.romaji}&sengine=all`}
                           target="_blank"
                           rel="noreferrer"
                         >
                           <img
-                            src="https://d4.alternativeto.net/qOUfLCyFQ-70alqi28JbEZrmi9oNnWmaqmmND0fj9m8/rs:fill:280:280:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy85YW5pbWVfMTA3NTM5LnBuZw.png"
+                            src="https://pbs.twimg.com/profile_images/1263003620594708483/znw0-sKS_400x400.jpg"
                             alt=""
                             className={styles.animix}
                           />
