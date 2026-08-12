@@ -93,7 +93,7 @@ const Winter = () => {
 
     var variables = {
       season: "WINTER",
-      seasonYear: 2025,
+      seasonYear: 2026,
       page: 1,
       sort: search.sortBy || "POPULARITY_DESC",
     };
