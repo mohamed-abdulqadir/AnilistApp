@@ -266,7 +266,7 @@ const Fall = () => {
                         <span className="sequel">Sequel to {sequelTo}</span>
                       ) : (
                         <span>
-                          Source • {anime.source.split("_").join(" ")}
+                          Source • {(anime.source || "").split("_").join(" ")}
                         </span>
                       )}
                     </div>
