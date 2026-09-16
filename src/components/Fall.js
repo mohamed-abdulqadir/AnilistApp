@@ -161,8 +161,8 @@ const Fall = () => {
         });
 
         const sequelName =
-          anime.relations.nodes[rightIndex]?.title?.romaji ||
-          anime.relations.nodes[rightIndex]?.title?.english;
+          anime.relations.nodes[rightIndex]?.title?.english ||
+          anime.relations.nodes[rightIndex]?.title?.romaji;
 
         const sequelTo =
           sequelName?.length > 25
